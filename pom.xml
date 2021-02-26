@@ -387,7 +387,7 @@
        			<format>xml</format>
     			 </formats>
        			</configuration>
-     	</plugin>
+     		</plugin>
         </plugins>
     </build>
             
@@ -463,11 +463,15 @@
                 </reportSets>
             </plugin>
             <plugin>
-        	<groupId>org.apache.maven.plugins</groupId>
-        	<artifactId>maven-pmd-plugin</artifactId>
-        	<version>3.14.0</version>
+        			<groupId>org.apache.maven.plugins</groupId>
+        			<artifactId>maven-pmd-plugin</artifactId>
+        			<version>3.14.0</version>
             </plugin>
-            
+            <plugin>
+		        <groupId>org.codehaus.mojo</groupId>
+		        <artifactId>jdepend-maven-plugin</artifactId>
+		        <version>2.0</version>
+      		 </plugin>
 
         </plugins>
     </reporting>
